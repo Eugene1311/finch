@@ -6,6 +6,10 @@
 	text-align:center;
 	padding:40px 0;
 }
+.clearfix{
+	content:".";
+	display:table;
+}
 body{
 	width:100%;
 	font-size:100%;
@@ -56,6 +60,7 @@ a{
 }
 .last{
 	margin-right:0;
+	padding:0;
 }
 .active{
 	color:@active-color;
@@ -91,13 +96,16 @@ a{
 	margin-top:60px;
 	font-weight:bolder;
 	color:@main-color;
-	h3{
-		float:left;
-		font-size:0.9em;
-		span{
-			color:@active-color;
-			margin-right:3%;
-		}
+}
+.title{
+	text-transform: uppercase;
+	font-weight:bolder;
+	float:left;
+	font-size:0.9em;
+	width:35%;
+	span{
+		color:@active-color;
+		margin-right:3%;
 	}
 }
 .main-menu{
@@ -153,15 +161,33 @@ table{
 }
 /*instagram*/
 .instagram{
-	//text-align:center;
 	background:#f7f7f7;
-	padding:0 13.5%;
-	img{
-		display:block;
-		float:left;
-		margin-right:1%;
-		width:24%;
+	padding:60px 0;
+	a{
+		text-transform:uppercase;
+		float:right;
+		font-size:0.8em;
+		font-weight:bolder;
+		width:50%;
+		text-align: right;
+		&:hover{
+			color:@active-color;
+		}
+		img{
+			width:10px;
+			vertical-align: baseline;
+		}
 	}
+}
+.instagram img{
+	margin-right:0.15%;
+	width:24.6%;
+	//padding-right:.4%
+}
+.images{
+	clear:both;
+	margin-top: 30px;
+	width:100%;
 }
 /*pre-footer*/
 .pre-footer{
@@ -185,11 +211,12 @@ table{
 .social{
 	text-align: center;
 	margin:35px 0;
+	padding-left:0.3%;
 	a{
 		display:inline-block;
 		margin-right:.15%;
-		-webkit-transition:all .5s;
-		transition:all .5s;
+		-webkit-transition:all .3s;
+		transition:all .3s;
 		&:hover{
 			-webkit-transform:translateY(-5px);
 			-ms-transform:translateY(-5px);
