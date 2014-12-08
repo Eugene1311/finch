@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet/less" href="css/style.less">
 	<script src="js/less-1.7.3.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/script.js"></script>
 	<title>Finch</title>
 </head>
 <body>
@@ -79,15 +81,77 @@
 				</table>
 			</div>
 		</div>
+		<div class="slider">
+			<div class="slide active-slide" data-tab="1">
+				<img src="img/slider_img.jpg" alt="шишки">
+			</div>
+			<div class="slide" data-tab="2">
+				<img src="img/slider_img2.jpg" alt="шишки">
+			</div> 
+			<div class="slide" data-tab="3">
+				<img src="img/slider_img3.jpg" alt="шишки">
+			</div>
+			<div class="slide" data-tab="4">
+				<img src="img/slider_img4.jpg" alt="шишки">
+			</div>
+			<ul class="dots">
+				<li class="dot active-dot" data-tab="1"></li>
+				<li class="dot" data-tab="2"></li>
+				<li class="dot" data-tab="3"></li>
+				<li class="dot" data-tab="4"></li>
+			</ul>
+			<div class="slider-caption">
+              <h3 class="title"><span>-</span>what our customers think<span>-</span></h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+              <span>barklay widerski</span>
+            </div>
+		</div>
+		<div class="wrapper">
+			<h3 class="title"><span>-</span>our recent posts</h3>
+			<div class="posts">
+			<section class="post">
+				<img src="img/french-press-img.jpg" alt="">
+				<h4>Lorem ipsum dolor sit.</h4>
+				<span>Photography,Journal&nbsp; &frasl;&nbsp; 9 Comments</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae beatae autem nobis optio!</p>
+			</section>
+			<section class="post last">
+				<img src="img/street.jpg" alt="">
+				<h4>Lorem ipsum dolor sit.</h4>
+				<span>Photography,Journal&nbsp; &frasl;&nbsp; 9 Comments</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae beatae autem nobis optio!</p>
+			</section>
+			<section class="post">
+				<img src="img/table.jpg" alt="">
+				<h4>Lorem ipsum dolor sit.</h4>
+				<span>Photography,Journal&nbsp; &frasl;&nbsp; 9 Comments</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae beatae autem nobis optio!</p>
+			</section>
+			<section class="post last">
+				<img src="img/flowers.jpg" alt="">
+				<h4>Lorem ipsum dolor sit.</h4>
+				<span>Photography,Journal&nbsp; &frasl;&nbsp; 9 Comments</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae beatae autem nobis optio!</p>
+			</section>
+			</div>
+		</div>
 		<div class="instagram">
 			<div class="wrapper clearfix">
 				<h3 class="title"><span>-</span>Latest instagram shots</h3>
-				<a href=""><img src="img/arrow.png" alt="">go to our instagram page&rarr;</a>
-				<div class="images">
-					<img src="img/bycircle.jpg" alt="">
-					<img src="img/door.jpg" alt="">
-					<img src="img/cabels.jpg" alt="">
-					<img class="last" src="img/car.jpg" alt="">
+				<a href="#"><img src="img/arrow.png" alt="">go to our instagram page&rarr;</a>
+				<div class="images clearfix">
+					<div class="image">
+						<img src="img/bycircle.jpg" alt="">
+					</div>
+					<div class="image">
+						<img src="img/door.jpg" alt="">
+					</div>
+					<div class="image">
+						<img src="img/cabels.jpg" alt="">
+					</div>
+					<div class="image last">
+						<img src="img/car.jpg" alt="">
+					</div>
 				</div>
 			</div>
 		</div>

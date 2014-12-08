@@ -58,10 +58,6 @@ a{
 		}
 	}
 }
-.last{
-	margin-right:0;
-	padding:0;
-}
 .active{
 	color:@active-color;
 }
@@ -159,6 +155,93 @@ table{
 		padding-bottom: 7px;
 	}
 }
+/*slider*/
+.slider{
+	position:relative;
+	//height:300px;
+}
+.slide{
+	position:relative;
+	display:none;
+	top:0;
+	left:0;
+	img{
+		width:100%;
+		vertical-align:bottom;
+	}
+}
+.active-slide{
+	display:block;
+}
+.dots{
+	position:absolute;
+	left:47.5%;
+	top:70%;
+	cursor:pointer;
+}
+.dot{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	border:1px solid #777777;
+}
+.active-dot{
+	border:1px solid #bebebe;
+}
+.slider-caption{
+	width:30%;
+	position:absolute;
+	top:20%;
+	left:34.6%;
+	text-align:center;
+	h3{
+		color:white;
+		float:none;
+		width:auto;
+	}
+	p{
+		color:#dddddd;
+		line-height: 1.5em;
+		margin:6% 0 4%;
+	}
+	span{
+		text-transform:uppercase;
+		color:@active-color;
+		font-size:0.6em;
+	}
+}
+.slider-caption .title span{
+	margin-left:3%;
+}
+/*recent*/
+.posts{
+	clear:both;
+}
+.post{
+	width:49%;
+	display:inline-block;
+	margin:30px 1.6% 45px 0;
+	img{
+		float:left;
+		width:32%;
+		margin-right:4%;
+	}
+	h4{
+		font-weight:bolder;
+		font-size:1.1em;
+		margin-bottom:8px;
+		margin-top:2px;
+	}
+	span{
+		font-size:0.9em;
+		display:block;
+		margin-bottom: 15px;
+		color:@text-color;
+	}
+	p{
+		color:#5c5c5c;
+	}
+}
 /*instagram*/
 .instagram{
 	background:#f7f7f7;
@@ -176,13 +259,18 @@ table{
 		img{
 			width:10px;
 			vertical-align: baseline;
+			margin-right:1%;
 		}
 	}
 }
-.instagram img{
-	margin-right:0.15%;
-	width:24.6%;
-	//padding-right:.4%
+.image{
+	float:left;
+	margin-right:1%;
+	width:24.25%;
+	img{
+		display:block;
+		width:100%;
+	}
 }
 .images{
 	clear:both;
@@ -228,4 +316,8 @@ table{
 footer{
 	background:#1a1a1b;
 	.footer-style;
+}
+/**/
+.last{
+	margin-right:0;
 }
