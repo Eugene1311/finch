@@ -65,6 +65,7 @@ a{
 .wrapper{
 	width:73.125%;
 	margin:0 auto;
+	padding:60px 0;
 }
 .top-image{
 	margin-top:40px;
@@ -155,20 +156,48 @@ table{
 		padding-bottom: 7px;
 	}
 }
+/*what we do*/
+.photography{
+	width:33.3333%;
+	float:left;
+	margin-top:30px;
+	max-height:200px;
+	figure{
+		width:10%;
+		float:left;
+		vertical-align:top;
+		margin-right:5%;
+		img{
+			width:100%;
+		}
+	}
+	section{
+		float:right;
+		width:83%;
+		font-size:0.95em;
+		h4{
+			font-weight:bolder;
+			margin-bottom:10px;
+		}
+		p{
+			padding-right:5%;
+		}
+	}
+}
+.first{
+	clear:both;
+}
 /*slider*/
 .slider{
 	width:100%;
 	position:relative;
-	height:300px;
 }
 .slide{
 	width:100%;
-	//position:absolute;
+	position:absolute;
 	display:none;
-	float:left;
 	top:0;
 	left:0;
-	height:300px;
 	img{
 		width:100%;
 		vertical-align:bottom;
@@ -224,7 +253,7 @@ table{
 .post{
 	width:49%;
 	display:inline-block;
-	margin:30px 1.6% 45px 0;
+	margin:30px 1.6% 20px 0;
 	img{
 		float:left;
 		width:32%;
@@ -248,9 +277,8 @@ table{
 	}
 }
 /*instagram*/
-.instagram{
+.grey-bg{
 	background:#f7f7f7;
-	padding:60px 0;
 	a{
 		text-transform:uppercase;
 		float:right;
@@ -325,4 +353,37 @@ footer{
 /**/
 .last{
 	margin-right:0;
+}
+/*to top button*/
+#toTop {
+	width: 21px;
+	height: 20px;
+	border: 2px solid #ccc;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:25px; 
+	right:30px;
+	cursor:pointer;
+	display:none;
+	color:#ccc;
+	border-radius:50%;
+	-webkit-transition:all 0.8s;
+	transition:all 0.8s;
+	opacity:0.5;
+}
+#toTop span{
+	vertical-align: top;
+	margin-top: 10px;
+	font-weight: bold;
+	-webkit-transition:all 0.8s;
+	transition:all 0.8s;
+}
+#toTop:hover{
+	border: 2px solid #666;
+	background:rgb(204, 204, 204, .2);
+	opacity:1;
+	& span{
+		color:#666;
+	}
 }
