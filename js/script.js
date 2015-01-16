@@ -48,10 +48,12 @@ $(function () {
 				}
 			});
 			if (currentCategory = 'conceptual') {
-				 $('.gallery>div').css({/*'display':'inline-block',*/
-//									   'vertical-align':'top',
-									   'margin':'0 0.8% 10px 0'});
-				$('.gallery>div:nth-child(4)').css({'float':'right','margin':'0'});
+				 $('.gallery>div').css({'margin-bottom':'10px'});
+				$('.gallery>div:nth-child(4)').css({'position':'absolute',
+													'right':'0',
+													'margin':'0'});
+				$('.gallery>div:nth-child(2)').css({'padding-bottom':'0.93%',
+													'margin-bottom':'0'});
 			}		
 			$('.main-menu li').removeClass('active');
 			$(this).addClass("active");
