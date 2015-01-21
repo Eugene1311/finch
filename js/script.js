@@ -36,9 +36,6 @@ $(function () {
 				html += '<div>' + result + '</div>';
 			});
 			$('.gallery').html(html);
-//						.hide()
-//						.slideDown('slow');
-			$('.gallery>div img').hide().slideDown('slow');
 			$('.gallery>div').each(function(index){
 				console.log($(this).width());
 				width = $(this).width();
@@ -48,6 +45,8 @@ $(function () {
 					$(this).addClass('col-1')
 				}
 			});
+//			$('.gallery>div img').hide().slideDown('slow');
+			$('.gallery').hide().slideDown('slow','linear');
 			if (currentCategory = 'conceptual') {
 				$('.gallery>div').css({'margin-bottom':'10px'});
 				$('.gallery>div:nth-child(4)').css({'position':'absolute',
