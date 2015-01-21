@@ -16,7 +16,7 @@ $(function () {
  		}
  	});
  	$('#toTop').click(function() {
- 		$('body,html').animate({scrollTop:200},800);
+ 		$('body,html').animate({scrollTop:0},800);
  	});
 	//Gallery
 	$('.main-menu li').each(function(i){
@@ -33,11 +33,12 @@ $(function () {
 			console.log(currentCategory);
 			$('[data-type="'+currentCategory+'"]').each(function(index) {
 				var result = $(this).html();
-				//console.log(result);
 				html += '<div>' + result + '</div>';
 			});
-			$('.gallery').html(html).hide();
-			$('.gallery').slideDown('200');
+			$('.gallery').html(html);
+//						.hide()
+//						.slideDown('slow');
+			$('.gallery>div img').hide().slideDown('slow');
 			$('.gallery>div').each(function(index){
 				console.log($(this).width());
 				width = $(this).width();
@@ -48,12 +49,13 @@ $(function () {
 				}
 			});
 			if (currentCategory = 'conceptual') {
-				 $('.gallery>div').css({'margin-bottom':'10px'});
+				$('.gallery>div').css({'margin-bottom':'10px'});
 				$('.gallery>div:nth-child(4)').css({'position':'absolute',
 													'right':'0',
 													'margin':'0'});
-				$('.gallery>div:nth-child(2)').css({'padding-bottom':'0.93%',
+				$('.gallery>div:nth-child(2)').css({'padding-bottom':'0.95%',
 													'margin-bottom':'0'});
+				$('.gallery>div:nth-child(3)').css('padding-bottom', '0.1%');
 			}		
 			$('.main-menu li').removeClass('active');
 			$(this).addClass("active");

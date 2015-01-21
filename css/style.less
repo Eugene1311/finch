@@ -132,11 +132,6 @@ a{
 		}
 	}
 }
-//.main-menu li:not(:first-child)::before{
-//	content:'/';
-//	margin:0 24px;
-//	color:@main-color;
-//}
 .gallery{
 	clear:both;
 	position: relative;
@@ -169,41 +164,6 @@ a{
 .portfolio-item{
 	
 }
-//figure {
-//	clear:both;
-//	padding-top:25px;
-//	img{
-//		display:inline-block;
-//		//vertical-align:top;
-//	}
-//}
-//.row{
-//	display: -webkit-box;
-//	display: -webkit-flex;
-//	display: -ms-flexbox;
-//	display: flex;
-//}
-//.column{
-//	width:35%;
-//	display:inline-block;
-//	img{
-//		width:100%;
-//	}
-//}
-//table{
-//	width:100%;
-//	clear:both;
-//	border-spacing:10px;
-//	td{
-//		vertical-align: top;
-//		//padding:0 1%;
-//	}
-//	img{
-//		width:100%;
-//		display: block;
-//		padding-bottom: 7px;
-//	}
-//}
 /*what we do*/
 .photography{
 	width:33.3333%;
@@ -272,7 +232,8 @@ a{
 .slider-caption{
 	width:30%;
 	position:absolute;
-	top:20%;
+	top:0;
+	padding-top:5%;
 	left:34.6%;
 	text-align:center;
 	h3{
@@ -299,9 +260,11 @@ a{
 	clear:both;
 }
 .post{
-	width:49%;
+	width:50%;
 	display:inline-block;
-	margin:30px 1.6% 20px 0;
+	margin:30px -4px 20px 0;
+	padding-right:10px;
+	box-sizing:border-box;
 	img{
 		float:left;
 		width:32%;
@@ -318,35 +281,44 @@ a{
 		display:block;
 		margin-bottom: 15px;
 		color:@text-color;
+		padding-left:36%;
 	}
 	p{
 		color:#5c5c5c;
 		font-size:1em;
+		padding-left:36%;
 	}
 }
 /*instagram*/
 .grey-bg{
 	background:#f7f7f7;
+}
+.inst-link{
+	width:50%;
+	float:right;
+	text-align: right;
 	a{
 		text-transform:uppercase;
-		float:right;
 		font-size:0.8em;
 		font-weight:bolder;
-		width:18%;
-		text-align: right;
 		&:hover{
 			color:@active-color;
 		}
-		span{
-			font-size:1.3em;
-			font-weight: normal;
-		}
+//		span{
+//			font-size:1.3em;
+//			font-weight: normal;
+//		}
 		img{
 			width:10px;
 			vertical-align: baseline;
 			margin-right:1%;
 		}
 	}
+}
+.inst-link a::after{
+	content:'\2192';
+	font-size:1.3em;
+	font-weight: normal;
 }
 .image{
 	float:left;
